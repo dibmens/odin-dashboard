@@ -1,0 +1,130 @@
+
+/* ------- GRID PLACEMENT --------- */
+
+body {
+    display: grid;
+    grid-template: 1fr 8fr / 1fr 5fr;
+    height: 100vh;
+    /* width: 100vw; */
+    margin: 0;
+}
+
+.sidebar {
+    grid-row: 1/3;
+    background-color: rgb(31, 31, 51);
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-content: start;
+    gap: 1rem;
+    padding: 1.5rem;
+    color: aliceblue;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 300px;
+    gap: 1rem;
+    padding: 1rem;
+    align-content: start;
+}
+
+.project-container {
+    grid-row: 1/3;
+}
+
+.project-wrapper,
+.announcement-wrapper,
+.trending-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 6px;
+    border-radius: .5rem;
+    height: 100%;
+}
+
+.trending {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: .5rem;
+}
+
+.announcement,
+.trending {
+    grid-column: 1/3;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.icon-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    justify-items: end;
+}
+
+
+/* -------------- STYLING ----------------- */
+
+body > div {
+    background-color: brown;
+}
+
+.icon-logo,
+.logo,
+.icon-communities,
+.communities {
+    margin-bottom: 4rem;
+}
+
+.project {
+    border-radius: .5rem;
+    padding: 1rem;
+    border-left: .5rem inset rgb(252, 80, 229);
+}
+
+.trending-container {
+    margin-top: 1.5rem;
+}
+
+.ico {
+    width: fit-content;
+}
+
+h4 {
+   margin: 0 auto;
+}
+
+p {
+    margin-top: .2rem;
+}
+
+.announcement-wrapper > div:nth-child(-n+2),
+.trending-wrapper > div:nth-child(-n+2) {
+    border-bottom: 1px solid grey;
+}
+
+.project-art {
+    background-image: url("adventure1.jpg");
+    background-size: 100%;
+    background-position-y: -30px;
+    background-repeat: no-repeat;
+    height: 80px;
+    margin: -16px -16px 5px -16px;
+    border-radius: 0 .5rem 0 0;
+    margin-bottom: 10px;
+}
+
+.trending-profile-ico {
+    height: 45px;
+    border-radius: 100% ;
+}
+
+.project-wrapper > div,
+.announcement-wrapper,
+.trending-wrapper {
+    background-color: rgba(34, 33, 32, 0.959);
+    color: aliceblue;
+}
+
+.header {
+    background-color: darkgreen;
+}
