@@ -1,31 +1,62 @@
 
 /* ------- GRID PLACEMENT --------- */
-
 body {
-    display: grid;
-    grid-template: 1fr 8fr / 1fr 5fr;
-    height: 100vh;
-    /* width: 100vw; */
+  display: grid;
+    grid-template-columns: minmax(0px, 1fr) minmax(800px, 1200px) minmax(0px, 1fr);
+    justify-content: stretch;
     margin: 0;
+    background-color: rgb(47, 47, 51);
+}
+
+main {
+    grid-column: 2/3;
+    display: grid;
+    grid-template: 1fr 6fr / 1fr 5fr;
+    height: 100vh;
+    margin: 0;
+}
+
+.header-top-wrapper {
+    display: grid;
+    grid-template-columns: 10fr 1fr .8fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-bottom-wrapper {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.search-input {
+    width: 75%;
 }
 
 .sidebar {
     grid-row: 1/3;
-    background-color: rgb(31, 31, 51);
+    background-color: rgb(161, 6, 6);
+    color: black;
     display: grid;
     grid-template-columns: 1fr 5fr;
     align-content: start;
     gap: 1rem;
-    padding: 1.5rem;
-    color: aliceblue;
+    padding: 2rem .8rem;
+    font-weight: 700;
+    
 }
 
 .content {
     display: grid;
-    grid-template-columns: 2fr 300px;
+    grid-template-columns: minmax(200px,3fr) minmax(160px,1fr);
     gap: 1rem;
     padding: 1rem;
     align-content: start;
+    color: aliceblue;
+    font-weight: 700;
 }
 
 .project-container {
@@ -64,21 +95,17 @@ body {
 
 /* -------------- STYLING ----------------- */
 
-body > div {
-    background-color: brown;
-}
 
-.icon-logo,
-.logo,
-.icon-communities,
-.communities {
-    margin-bottom: 4rem;
+
+* {
+ font-family: Judson, Helvetica, sans-serif;
+ font-size: .95rem;
 }
 
 .project {
     border-radius: .5rem;
     padding: 1rem;
-    border-left: .5rem inset rgb(252, 80, 229);
+    border-left: .5rem inset rgb(255, 0, 0);
 }
 
 .trending-container {
@@ -87,44 +114,124 @@ body > div {
 
 .ico {
     width: fit-content;
+    justify-self: center;
 }
 
 h4 {
    margin: 0 auto;
+   font-size: 1.1rem;
 }
 
 p {
     margin-top: .2rem;
+    margin-bottom: .2rem;
+    font-weight: 100;
 }
 
 .announcement-wrapper > div:nth-child(-n+2),
-.trending-wrapper > div:nth-child(-n+2) {
+.trending-wrapper > div:nth-child(-n+3) {
     border-bottom: 1px solid grey;
 }
 
 .project-art {
-    background-image: url("adventure1.jpg");
+    
     background-size: 100%;
     background-position-y: -30px;
     background-repeat: no-repeat;
-    height: 80px;
-    margin: -16px -16px 5px -16px;
+    height: 100px;
+    margin: -16px -15px 5px -15px;
     border-radius: 0 .5rem 0 0;
     margin-bottom: 10px;
 }
 
+
+.art1 {
+    background-image: url("/images/hunter.jpg");
+}
+
+.art2 {
+    background-image: url("/images/agents.jpg");
+}
+
+
 .trending-profile-ico {
-    height: 45px;
+    height: 35px;
     border-radius: 100% ;
 }
 
-.project-wrapper > div,
+.main-profile-ico {
+    height: 60px;
+    justify-self: end;
+    
+}
+
+.header,
+.project,
 .announcement-wrapper,
 .trending-wrapper {
+    color: rgb(240, 248, 255);
     background-color: rgba(34, 33, 32, 0.959);
-    color: aliceblue;
+    box-shadow: 1px 1px 4px rgb(73, 69, 69);
+    gap: .5rem;
+}
+
+.project:hover {
+    border-left: .5rem inset rgb(42, 224, 6); 
 }
 
 .header {
-    background-color: darkgreen;
+    padding: 1rem 3rem;
+}
+
+a {
+    color: pink;
+}
+
+.header-buttons {
+    color: black;
+    font-weight: 700;
+    background-color: rgb(196, 0, 0);
+    border-radius: 1rem;
+    text-align: center;
+    padding: .4rem .2rem;
+}
+
+
+.greeting {
+    margin-bottom: 0;
+}
+
+.name {
+    margin: 0;
+    /* font-size: 1.4rem;
+    font-weight: 900; */
+}
+
+.search-submit {
+    border: none;
+    height: 23px;
+    background-color:  rgba(34, 33, 32, 0.959);
+    
+}
+
+.icon {
+    margin-bottom: -3px;
+}
+
+.notification {
+    justify-self: center;
+}
+
+
+.logo {
+    font-family: "Protest Strike", Impact, sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+    align-self: center;
+}
+
+.menu:nth-child(12){
+    margin-bottom: 3rem;
 }

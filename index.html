@@ -5,165 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Judson:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="icon-logo">ico</div>
-        <div class="logo">VAGABONDS</div>
-        <div class="icon-profile">ico</div>
-        <div class="profile">Profile</div>
-        <div class="icon-messages">ico</div>
-        <div class="messages">Messages</div>
-        <div class="icon-history">ico</div>
-        <div class="history">History</div>
-        <div class="icon-tasks">ico</div>
-        <div class="tasks">Tasks</div>
-        <div class="icon-communities">ico</div>
-        <div class="communities">Communities</div>
-        <div class="icon-settings">ico</div>
-        <div class="settings">Settings</div>
-        <div class="icon-support">ico</div>
-        <div class="support">Support</div>
-        <div class="icon-privacy">ico</div>
-        <div class="privacy">Privacy</div>
-    </div>
-    <div class="header"></div>
-    <div class="content">
-        <div class="project-container">Your Projects
-            <div class="project-wrapper">
-                <div class="project">
-                    <div class="project-art"></div>
-                    <h4>Title of said bullshit</h4>
-                    <p>
-                        Some bullshit text about god knows what. Probably 
-                        should go more into detail or serve as a description.
-                        Let's add another line of filler text.
-                    </p>
-                    <div class="icon-wrapper">
-                        <div class="ico">ico</div>
-                        <div class="ico">ico</div>
-                        <div class="ico">ico</div>
+    <main>
+        <div class="sidebar">
+            <img class="ico" src="/icons/logo.svg" alt="logo">
+            <div class="logo">THRILL, KILL, ANY ORDER</div>
+            <img class="ico" src="/icons/profile.svg" alt="share this space">
+            <div class="menu">Main</div>
+            <img class="ico" src="/icons/rules.svg" alt="rules">
+            <div class="menu">Game Rules</div>
+            <img class="ico" src="/icons/profile.svg" alt="share this space">
+            <div class="menu">Profile</div>
+            <img class="ico" src="/icons/character.svg" alt="characters">
+            <div class="tasks">Characters</div>
+            <img class="ico" src="/icons/story.svg" alt="story spaces">
+            <div class="menu">Story Spaces</div>
+            <img class="ico" src="/icons/settings.svg" alt="settings">
+            <div class="menu">Settings</div>
+            <img class="ico" src="/icons/support.svg" alt="support">
+            <div class="menu">Support</div>
+            <img class="ico" src="/icons/game.svg" alt="story spaces">
+            <div class="menu">Our Games</div>
+        </div>
+        <div class="header">
+            <div class="header-top-wrapper">
+                <form action="" class="search-form" method="get">
+                    <button class="search-submit" type="submit">
+                        <img class="icon" src="icons/search.svg" alt="search button">
+                    </button>
+                    <input class="search-input" type="search" name="search" id="search">
+                </form>
+                <a class="notification" href=""><img src="/icons/bell.svg" alt="notification icon"></a>
+                <img class="trending-profile-ico" src="/images/profile1.jpg" alt="profile icon">
+                <div class="header-profile-name">dibmens</div>
+            </div>
+            <div class="header-bottom-wrapper">
+                <img class="trending-profile-ico main-profile-ico" src="/images/profile1.jpg" alt="profile icon">
+                <div class="profile-greeting">
+                    <p class="greeting">Welcome,</p>
+                    <p class="name">Dibmens (@dibmens)</p>
+                </div>
+                <buttons class="header-buttons">New</buttons>
+                <buttons class="header-buttons">Upload</buttons>
+                <buttons class="header-buttons">Share</buttons>
+            </div>
+        </div>
+        <div class="content">
+            <div class="project-container">Recent Story Spaces
+                <div class="project-wrapper">
+                    <div class="project">
+                        <div class="project-art art1"></div>
+                        <h4>Hunters Become The Hunted</h4>
+                        <p>
+                            We hunt alone to prove our worth. We hunt in a pack
+                            to survive. The ritual hunting grounds have been
+                            turned into a death trap by our very prey.
+                        </p>
+                        <div class="icon-wrapper">
+                            <a href=""><img class="ico" src="/icons/pin.svg" alt="pin this space"></a>
+                            <a href=""><img class="ico" src="/icons/add-player.svg" alt="add a player"></a>
+                            <a href=""><img class="ico" src="/icons/share.svg" alt="share this space"></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-art art2"></div>
+                        <h4>The Werehouse</h4>
+                        <p>
+                            On a tip-off, the FBI agents set upon an old
+                            warehouse to bust an illegal drug operation.
+                            The drug, however, is nothing they have seen before...
+                        </p>
+                        <div class="icon-wrapper art3">
+                            <a href=""><img class="ico" src="/icons/pin.svg" alt="pin this space"></a>
+                            <a href=""><img class="ico" src="/icons/add-player.svg" alt="add a player"></a>
+                            <a href=""><img class="ico" src="/icons/share.svg" alt="share this space"></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-art art4"></div>
+                        <h4>Title of said bullshit</h4>
+                        <p>
+                            Some bullshit text about god knows what. Probably
+                            should go more into detail or serve as a description.
+                            Let's add another line of filler text.
+                        </p>
+                        <div class="icon-wrapper">
+                            <a href=""><img class="ico" src="/icons/pin.svg" alt="pin this space"></a>
+                            <a href=""><img class="ico" src="/icons/add-player.svg" alt="add a player"></a>
+                            <a href=""><img class="ico" src="/icons/share.svg" alt="share this space"></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-art art5"></div>
+                        <h4>Title of said bullshit</h4>
+                        <p>
+                            Some bullshit text about god knows what. Probably
+                            should go more into detail or serve as a description.
+                            Let's add another line of filler text.
+                        </p>
+                        <div class="icon-wrapper">
+                            <a href=""><img class="ico" src="/icons/pin.svg" alt="pin this space"></a>
+                            <a href=""><img class="ico" src="/icons/add-player.svg" alt="add a player"></a>
+                            <a href=""><img class="ico" src="/icons/share.svg" alt="share this space"></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-art art6"></div>
+                        <h4>Title of said bullshit</h4>
+                        <p>
+                            Some bullshit text about god knows what. Probably
+                            should go more into detail or serve as a description.
+                            Let's add another line of filler text.
+                        </p>
+                        <div class="icon-wrapper">
+                            <a href=""><img class="ico" src="/icons/pin.svg" alt="pin this space"></a>
+                            <a href=""><img class="ico" src="/icons/add-player.svg" alt="add a player"></a>
+                            <a href=""><img class="ico" src="/icons/share.svg" alt="share this space"></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-art"></div>
+                        <h4>Title of said bullshit</h4>
+                        <p>
+                            Some bullshit text about god knows what. Probably
+                            should go more into detail or serve as a description.
+                            Let's add another line of filler text.
+                        </p>
+                        <div class="icon-wrapper">
+                            <a href=""><img class="ico" src="/icons/pin.svg" alt="pin this space"></a>
+                            <a href=""><img class="ico" src="/icons/add-player.svg" alt="add a player"></a>
+                            <a href=""><img class="ico" src="/icons/share.svg" alt="share this space"></a>
+                        </div>
                     </div>
                 </div>
-                <div class="project">
-                    <div class="project-art"></div>
-                    <h4>Title of said bullshit</h4>
-                    <p>
-                        Some bullshit text about god knows what. Probably 
-                        should go more into detail or serve as a description.
-                        Let's add another line of filler text.
-                    </p>
-                    <div class="icon-wrapper">
-                        <div class="ico">ico</div>
-                        <div class="ico">ico</div>
-                        <div class="ico">ico</div>
+            </div>
+            <div class="announcement-container">Announcements
+                <div class="announcement-wrapper">
+                    <div class="announcement">
+                        <h4>New Stuff!</h4>
+                        <p>Check out this new fancy stuff that's coming your way
+                            very very soon. It will blow your little mind.
+                        </p>
+                    </div>
+                    <div class="announcement">
+                        <h4>More New Stuff!</h4>
+                        <p>Check out this new fancy stuff that's coming your way
+                            very very soon. It will blow your little mind.
+                        </p>
+                    </div>
+                    <div class="announcement">
+                        <h4>Even Newer Stuff!</h4>
+                        <p>Check out this new fancy stuff that's coming your way
+                            very very soon. It will blow your little mind.
+                        </p>
                     </div>
                 </div>
-                <div class="project">
-                    <div class="project-art"></div>
-                    <h4>Title of said bullshit</h4>
-                    <p>
-                        Some bullshit text about god knows what. Probably 
-                        should go more into detail or serve as a description.
-                        Let's add another line of filler text.
-                    </p>
-                    <div class="icon-wrapper">
-                        <div class="ico">ico</div>
-                        <div class="ico">ico</div>
-                        <div class="ico">ico</div>
+            </div>
+            <div class="trending-container">Recent Players
+                <div class="trending-wrapper">
+                    <div class="trending">
+                        <img class="trending-profile-ico" src="/images/profile1.jpg" alt="profile icon">
+                        <div class="trending-profile-info">
+                            <a href="">@User</a>
+                            <p> Live, love, laugh</p>
+                        </div>
                     </div>
-                </div>
-                <div class="project">
-                    <div class="project-art"></div>
-                    <h4>Title of said bullshit</h4>
-                    <p>
-                        Some bullshit text about god knows what. Probably 
-                        should go more into detail or serve as a description.
-                        Let's add another line of filler text.
-                    </p>
-                    <div class="icon-wrapper">
-                        <div class="ico">ico</div>
-                        <div class="ico">ico</div>
-                        <div class="ico">ico</div>
+                    <div class="trending">
+                        <img class="trending-profile-ico" src="/images/profile1.jpg" alt="profile icon">
+                        <div class="trending-profile-info">
+                            <a href="">@User</a>
+                            <p> Live, love, laugh</p>
+                        </div>
                     </div>
-                </div>
-                <div class="project">
-                    <div class="project-art"></div>
-                    <h4>Title of said bullshit</h4>
-                    <p>
-                        Some bullshit text about god knows what. Probably 
-                        should go more into detail or serve as a description.
-                        Let's add another line of filler text.
-                    </p>
-                    <div class="icon-wrapper">
-                        <div class="ico">ico</div>
-                        <div class="ico">ico</div>
-                        <div class="ico">ico</div>
+                    <div class="trending">
+                        <img class="trending-profile-ico" src="/images/profile1.jpg" alt="profile icon">
+                        <div class="trending-profile-info">
+                            <a href="">@User</a>
+                            <p> Live, love, laugh</p>
+                        </div>
                     </div>
-                </div>
-                <div class="project">
-                    <div class="project-art"></div>
-                    <h4>Title of said bullshit</h4>
-                    <p>
-                        Some bullshit text about god knows what. Probably 
-                        should go more into detail or serve as a description.
-                        Let's add another line of filler text.
-                    </p>
-                    <div class="icon-wrapper">
-                        <div class="ico">ico</div>
-                        <div class="ico">ico</div>
-                        <div class="ico">ico</div>
+                    <div class="trending">
+                        <img class="trending-profile-ico" src="/images/profile1.jpg" alt="profile icon">
+                        <div class="trending-profile-info">
+                            <a href="">@User</a>
+                            <p> Live, love, laugh</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="announcement-container">Announcements
-            <div class="announcement-wrapper">
-                <div class="announcement">
-                    <h4>New Stuff!</h4>
-                    <p>Check out this new fancy stuff that's coming your way
-                        very very soon. It will blow your little mind.
-                    </p>
-                </div>
-                <div class="announcement">
-                    <h4>More New Stuff!</h4>
-                    <p>Check out this new fancy stuff that's coming your way
-                        very very soon. It will blow your little mind.
-                    </p>
-                </div>
-                <div class="announcement">
-                    <h4>Even Newer Stuff!</h4>
-                    <p>Check out this new fancy stuff that's coming your way
-                        very very soon. It will blow your little mind.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="trending-container">Trending
-            <div class="trending-wrapper">
-                <div class="trending">
-                    <img class="trending-profile-ico" src="profile1.jpg" alt="profile icon">
-                    <div class="trending-profile-info">
-                        <a href="">@User</a>
-                        <p> Live, love, laugh</p>
-                    </div>
-                </div>
-                <div class="trending">
-                    <img class="trending-profile-ico" src="profile1.jpg" alt="profile icon">
-                    <div class="trending-profile-info">
-                        <a href="">@User</a>
-                        <p> Live, love, laugh</p>
-                    </div>
-                </div>
-                <div class="trending">
-                    <img class="trending-profile-ico" src="profile1.jpg" alt="profile icon">
-                    <div class="trending-profile-info">
-                        <a href="">@User</a>
-                        <p> Live, love, laugh</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </main>
 </body>
 </html>

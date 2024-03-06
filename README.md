@@ -1,6 +1,12 @@
 # odin-dashboard
 a simple dashboard practice
 
+Attribution:
+
+Icon art vectors by SVG Repo at https://www.svgrepo.com
+Fonts by Google Fonts at https://fonts.google.com/
+Profile and Spaces art by Bing Copilot at https://www.bing.com/chat
+
 
 Assignment:
 
