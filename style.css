@@ -90,6 +90,7 @@ main {
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;
     justify-items: end;
+    align-self: end;
 }
 
 
@@ -104,8 +105,10 @@ main {
 
 .project {
     border-radius: .5rem;
-    padding: 1rem;
+    padding: 1rem 1rem .7rem 1rem;
     border-left: .5rem inset rgb(255, 0, 0);
+    display: grid;
+    align-content: space-between;
 }
 
 .trending-container {
@@ -118,13 +121,15 @@ main {
 }
 
 h4 {
-   margin: 0 auto;
+   margin: 0 0;
    font-size: 1.1rem;
+   
 }
 
 p {
     margin-top: .2rem;
-    margin-bottom: .2rem;
+    margin-bottom: .8rem;
+    font-size: .9rem;
     font-weight: 100;
 }
 
@@ -134,16 +139,14 @@ p {
 }
 
 .project-art {
-    
     background-size: 100%;
     background-position-y: -30px;
     background-repeat: no-repeat;
-    height: 100px;
+    height: 80px;
     margin: -16px -15px 5px -15px;
     border-radius: 0 .5rem 0 0;
     margin-bottom: 10px;
 }
-
 
 .art1 {
     background-image: url("/images/hunter.jpg");
@@ -153,6 +156,24 @@ p {
     background-image: url("/images/agents.jpg");
 }
 
+.art3 {
+    background-image: url("/images/expedition.jpg");
+}
+
+.art4 {
+    background-image: url("/images/housewife.jpg");
+    
+}
+
+.art5 {
+    background-image: url("/images/nightfog.jpg");
+    background-position-y: -105px;
+}
+
+.art6 {
+    background-image: url("/images/pit.jpg");
+    background-position-y: -105px;
+}
 
 .trending-profile-ico {
     height: 35px;
@@ -175,8 +196,9 @@ p {
     gap: .5rem;
 }
 
-.project:hover {
-    border-left: .5rem inset rgb(42, 224, 6); 
+.project:hover{
+    border-left: .5rem inset aliceblue;
+    
 }
 
 .header {
@@ -194,6 +216,15 @@ a {
     border-radius: 1rem;
     text-align: center;
     padding: .4rem .2rem;
+    border: none;
+}
+
+.header-buttons:hover{
+    border: 2px solid aliceblue;
+}
+
+.header-buttons:active {
+    box-shadow: inset 2px 3px;
 }
 
 
@@ -225,13 +256,22 @@ a {
 
 .logo {
     font-family: "Protest Strike", Impact, sans-serif;
-    font-size: 28px;
+    font-size: 35px;
     font-weight: 900;
-    margin-top: 1rem;
-    margin-bottom: 10rem;
+    /* margin-top: 1rem; */
+    margin-bottom: 6rem;
     align-self: center;
 }
 
 .menu:nth-child(12){
     margin-bottom: 3rem;
+}
+
+.sidebar > a {
+    color: black;
+    text-decoration: none;
+}
+
+.sidebar > a:hover {
+    color: aliceblue;
 }
