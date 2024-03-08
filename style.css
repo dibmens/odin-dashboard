@@ -151,29 +151,29 @@ p {
 }
 
 .art1 {
-    background-image: url("/images/hunter.jpg");
+    background-image: url("./images/hunter.jpg");
 }
 
 .art2 {
-    background-image: url("/images/agents.jpg");
+    background-image: url("./images/agents.jpg");
 }
 
 .art3 {
-    background-image: url("/images/expedition.jpg");
+    background-image: url("./images/expedition.jpg");
 }
 
 .art4 {
-    background-image: url("/images/housewife.jpg");
+    background-image: url("./images/housewife.jpg");
     
 }
 
 .art5 {
-    background-image: url("/images/nightfog.jpg");
+    background-image: url("./images/nightfog.jpg");
     background-position-y: -105px;
 }
 
 .art6 {
-    background-image: url("/images/pit.jpg");
+    background-image: url("./images/pit.jpg");
     background-position-y: -105px;
 }
 
