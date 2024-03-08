@@ -34,6 +34,8 @@ main {
 
 .search-input {
     width: 75%;
+    border-radius: 1rem;
+    
 }
 
 .sidebar {
@@ -142,7 +144,7 @@ p {
     background-size: 100%;
     background-position-y: -30px;
     background-repeat: no-repeat;
-    height: 80px;
+    height: 75px;
     margin: -16px -15px 5px -15px;
     border-radius: 0 .5rem 0 0;
     margin-bottom: 10px;
@@ -229,13 +231,14 @@ a {
 
 
 .greeting {
+    font-size: 1.1rem;
     margin-bottom: 0;
 }
 
 .name {
     margin: 0;
-    /* font-size: 1.4rem;
-    font-weight: 900; */
+    font-size: 1.3rem;
+    font-weight: 900;
 }
 
 .search-submit {
